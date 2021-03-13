@@ -1,4 +1,4 @@
-#include "list/LinkList.cpp"
+#include "LinkList/LinkList.cpp"
 
 int main()
 {

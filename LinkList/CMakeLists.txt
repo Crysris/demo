@@ -4,4 +4,4 @@
 aux_source_directory(. DIR_LIB_SRCS)
 
 # build link library "list"
-add_library(list ${DIR_LIB_SRCS})
+add_library(LinkList ${DIR_LIB_SRCS})
