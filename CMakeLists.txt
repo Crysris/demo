@@ -15,8 +15,14 @@ ADD_EXECUTABLE(${PROJECT_NAME} Main.cpp)
 # find all source files and add them to DIR_SRCS
 aux_source_directory(. DIR_SRCS)
 
-# add sub directory "list"
-add_subdirectory(list)
+option(USE_MY_LIST)
+
+if(USE_MY_LIST)
+    # add sub directory "list"
+    add_subdirectory(list)
+    list(APPEND EXTRA_LIBS list)
+    list(APPEND EXTRA_INCLUDES "${PROJECT_SOURCE_DIR/list}")
+endif()
 
 # add link libraries "list"
 target_link_libraries(${PROJECT_NAME} list)
