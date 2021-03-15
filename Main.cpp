@@ -1,5 +1,5 @@
 #include "LinkList/LinkList.cpp"
-
+#include "TutorialConfig.h.in"
 int main()
 {
     /*ListNode<int> *a = ListNode<int>::createNode(3);
