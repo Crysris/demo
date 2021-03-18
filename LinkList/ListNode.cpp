@@ -2,9 +2,12 @@
 #include <cstring>
 #include <string>
 using namespace std;
+
+class LinkStack;
 template <class T>
 class ListNode
 {
+    friend class LinkStack;
 
 private:
     /* data */
@@ -43,7 +46,7 @@ ListNode<T> *ListNode<T>::createNode(T val)
     return new ListNode(val);
 }
 template <class T>
-ListNode<T> *ListNode<T>::createNode(T val,  ListNode *next)
+ListNode<T> *ListNode<T>::createNode(T val, ListNode *next)
 {
     return new ListNode(val, next);
 }

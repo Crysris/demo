@@ -1,4 +1,6 @@
 #include "LinkList/LinkList.cpp"
+#include "Tree/BSTree.cpp"
+#include
 
 int main()
 {
@@ -17,7 +19,7 @@ int main()
     b->destory()
     c->destory();*/
 
-    const int N = 100;
+    /*const int N = 100;
     const int MAX = 200; // node[1-200]
     const int L = 20;
     string nodeName[MAX];
@@ -40,6 +42,7 @@ int main()
 
     //for (int i = 1; i <= N; i++)
     //    node[i]->destory();
-    //delete list1;
+    //delete list1;*/
+
     return 0;
 }

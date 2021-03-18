@@ -7,6 +7,7 @@ using namespace std;
 template <class T>
 class TreeNode
 {
+
 private:
     /* data */
     T val;
@@ -17,6 +18,14 @@ public:
     TreeNode(int val)
     {
         this->val = val;
+        this->left = nullptr;
+        this->right = nullptr;
     }
-    ~TreeNode();
+    ~TreeNode()
+    {
+        delete left;
+        delete right;
+        delete this;
+    }
+    friend class BSTree;
 };
