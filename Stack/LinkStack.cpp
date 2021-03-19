@@ -1,4 +1,4 @@
-#include "../LinkList/ListNode.cpp"
+#include "LinkStack.h"
 
 template <class T>
 class LinkStack {
