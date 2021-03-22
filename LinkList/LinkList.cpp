@@ -8,10 +8,8 @@ private:
 
 public:
     int getLength() { return length; }
-    LinkList()
+    LinkList() : head(nullptr), length(0)
     {
-        head = nullptr;
-        length = 0;
     }
     LinkList(ListNode<T> *node);
     LinkList(LinkList<T> *list);
