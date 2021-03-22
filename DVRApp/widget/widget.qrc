@@ -1,6 +1,0 @@
-<RCC>
-    <qresource prefix="/">
-        <file>SiImageButton.qml</file>
-        <file>SiMouseArea.qml</file>
-    </qresource>
-</RCC>
