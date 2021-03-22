@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 #include "LinkStack.h"
 
 template <class T>
@@ -55,5 +56,3 @@ void LinkStack<T>::pop(T element) {
   p->next = nullptr;
   size--;
 }
-
-template <class T>

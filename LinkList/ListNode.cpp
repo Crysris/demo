@@ -1,3 +1,4 @@
+
 #include "ListNode.h"
 
 template <class T>
@@ -22,4 +23,4 @@ template <class T>
 void ListNode<T>::destory() {
   delete this->next;
   delete this;
-}
+

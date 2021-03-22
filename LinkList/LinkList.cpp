@@ -1,6 +1,8 @@
 #include "LinkList.h"
 
+
 #include "ListNode.h"
+
 
 template <class T>
 LinkList<T>::LinkList() {
