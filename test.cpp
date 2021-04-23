@@ -3,27 +3,25 @@
 
 using namespace std;
 
-class Node {
-  friend class List;
 
-private:
-  int val;
-  Node *next;
-
-public:
-  Node(int val) : next(nullptr) { this->val = val; }
-};
-
-class List {
-private:
-  Node *root;
-  int size;
-
-public:
-  void foo() { int val = root->val; }
+class State {
+ public:
+  State *next;
+  State *pre;
+  int pos;
+  State(int pos) {
+    this->pos = pos;
+    this->next = nullptr;
+    this->pre = nullptr;
+  } 
 };
 
 int main() {
-  Node *a = new Node(1);
+  State *a = new State(1);
+  State *b = new State(2);
+  a->next = b;
+  b->pre = a;
+  a = b;
+
   return 0;
 }

@@ -2,47 +2,25 @@
     "version": "0.2.0",
     "configurations": [
         {
-            "name": "C++ Launch",
-            "cwd": "${workspaceFolder}",
+            "name": "C/C++",
             "type": "cppdbg",
             "request": "launch",
-            "preLaunchTask": "Build with Clang",
-            "program": "${fileDirname}/${fileBasenameNoExtension}.out",
-            "stopAtEntry": false,
-            "launchCompleteCommand": "exec-run",
-            "linux": {
-                "MIMode": "gdb",
-                "miDebuggerPath": "/usr/bin/gdb"
-            },
-            "osx": {
-                "MIMode": "lldb"
-            },
-            "windows": {
-                "MIMode": "gdb",
-                "miDebuggerPath": "/usr/bin/gdb"
-            }
-        }
-    ],
-    "configurations1": [
-        {
-            "name": " Launch C",
-            "type": "cppdbg",
-            "request": "launch",
-            "program": "{fileDirname}/${fileBasenameNoExtension}",
+            "program": "${fileDirname}/${fileBasenameNoExtension}.exe",
             "args": [],
             "stopAtEntry": false,
             "cwd": "${workspaceFolder}",
-            "preLaunchTask1": "compile",
             "environment": [],
             "externalConsole": false,
-            "MIMode": "gcc",
+            "MIMode": "gdb",
+            "miDebuggerPath": "gdb.exe",
+            "preLaunchTask": "compile",
             "setupCommands": [
                 {
                     "description": "Enable pretty-printing for gdb",
                     "text": "-enable-pretty-printing",
                     "ignoreFailures": true
                 }
-            ]
-        }
+            ],
+        },
     ]
 }

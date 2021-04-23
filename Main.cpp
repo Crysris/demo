@@ -26,10 +26,10 @@ int main() {
     nodeName[i] = "node" + to_string(i);
     node[i] = ListNode<int>::createNode(i);
   }
-  //LinkStack<int> *stack1 = new LinkStack<int>();
+  // LinkStack<int> *stack1 = new LinkStack<int>();
   // stack1 insert node[1-20]
   for (int i = 1; i <= L; i++) {
-    //stack1->push(node[i]);
+    // stack1->push(node[i]);
   }
   /*
   LinkList<int> *list1 = new LinkList<int>();

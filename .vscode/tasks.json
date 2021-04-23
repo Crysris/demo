@@ -2,14 +2,17 @@
 	"version": "2.0.0",
 	"tasks": [
 		{
-			"label": "Build with Clang",
 			"type": "shell",
-			"command": "clang++",
+			"label": "compile",
+			"command": "g++",
 			"args": [
-				"-std=c++11",
+				"-g",
 				"${file}",
 				"-o",
-				"${fileDirname}/${fileBasenameNoExtension}.out"
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"problemMatcher": [
+				"$gcc"
 			],
 			"group": {
 				"kind": "build",
