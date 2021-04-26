@@ -21,6 +21,14 @@ def resizeAllPics(rootPath, width=0, height=0, targetPath="res\\"):
             dir_path = os.path.join(path, dir_name)
             f(dir_path)
 
+def listAllFiles(rootPath):
+    for path, dir_list, file_list in os.walk(rootPath):
+        for filename in file_list:
+            file_path = os.path.join(path, filename)
+            print(file_path)
+        for dir_name in dir_list:
+            dir_path = os.path.join(path, dir_name)
+            f(dir_path)
 
 def imageList(rootPath):
     l = []
@@ -50,4 +58,5 @@ TARGET = "D:\\uidq2886\\Desktop\\python\\pic"
 WIDTH, HEIGHT = 360, 192
 NUMBER = 140
 #generateMorePics(ROOT, TARGET, NUMBER)
-resizeAllPics(TARGET)
+#resizeAllPics(TARGET)
+listAllFiles(ROOT)
